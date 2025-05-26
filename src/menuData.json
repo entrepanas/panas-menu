@@ -1,0 +1,263 @@
+{
+  "categorias": [
+    {
+      "id": "maicitos",
+      "nombre": "Maicitos",
+      "imagen": "/images/maicitos.jpg",
+      "platillos": [
+        {
+          "id": "maicito-mixto",
+          "nombre": "Maicito Mixto",
+          "descripcion": "Maíz tierno desgranado con carne o pollo, queso mozzarella, ruffles o tocineta, con pimienta",
+          "precio": "23,000",
+          "imagen": "/images/maicito-mixto.jpg"
+        }
+      ]
+    },
+    {
+      "id": "salchipapa",
+      "nombre": "Salchipapa",
+      "imagen": "/images/salchipapa.jpg",
+      "platillos": [
+        {
+          "id": "salchipapa-clasica",
+          "nombre": "Salchipapa Clásica",
+          "descripcion": "Papas a la francesa 160gr, salchicha 2 unidades, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "14,000",
+          "imagen": "/images/salchipapa-clasica.jpg"
+        },
+        {
+          "id": "salchipapa-mixta",
+          "nombre": "Salchipapa Mixta",
+          "descripcion": "Carne mechada de ternera 150gr, pechuga a la plancha 150gr, papa a la francesa 160gr, salchicha 2 unidades, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "33,000",
+          "imagen": "/images/salchipapa-mixta.jpg"
+        }
+      ]
+    },
+    {
+      "id": "parrillas",
+      "nombre": "Parrillas",
+      "imagen": "/images/parrillas.jpg",
+      "platillos": [
+        {
+          "id": "parrilla-libra",
+          "nombre": "Parrilla de Libra",
+          "descripcion": "Parrilla de dos libras",
+          "precio": "45,000",
+          "imagen": "/images/parrilla-libra.jpg"
+        },
+        {
+          "id": "parrilla-cuatro-libras",
+          "nombre": "Parrilla de cuatro libras",
+          "descripcion": "Parrilla de cuatro libras",
+          "precio": "150,000",
+          "imagen": "/images/parrilla-cuatro.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nombre": "Bebidas",
+      "imagen": "/images/bebidas.jpg",
+      "platillos": [
+        {
+          "id": "gaseosa-personal",
+          "nombre": "Gaseosa 400ml personal",
+          "descripcion": "Gaseosa personal",
+          "precio": "5,500",
+          "imagen": "/images/gaseosa-personal.jpg"
+        },
+        {
+          "id": "gaseosa-1-5-litros",
+          "nombre": "Gaseosa 1.5 litros",
+          "descripcion": "Litro y medio",
+          "precio": "11,000",
+          "imagen": "/images/gaseosa-1-5.jpg"
+        },
+        {
+          "id": "agua-500",
+          "nombre": "Agua 500",
+          "descripcion": "Agua embotellada",
+          "precio": "4,000",
+          "imagen": "/images/agua.jpg"
+        },
+        {
+          "id": "frappé-fresa",
+          "nombre": "Frappé de fresa",
+          "descripcion": "Bebida fría de fresa",
+          "precio": "10,000",
+          "imagen": "/images/frappe-fresa.jpg"
+        },
+        {
+          "id": "frappé-maracuya",
+          "nombre": "Frappé de maracuyá",
+          "descripcion": "Bebida fría de maracuyá",
+          "precio": "10,000",
+          "imagen": "/images/frappe-maracuya.jpg"
+        },
+        {
+          "id": "frappé-mango",
+          "nombre": "Frappé de mango",
+          "descripcion": "Bebida fría de mango",
+          "precio": "10,000",
+          "imagen": "/images/frappe-mango.jpg"
+        },
+        {
+          "id": "limonada-coco",
+          "nombre": "Limonada de coco",
+          "descripcion": "Natural con coco",
+          "precio": "10,000",
+          "imagen": "/images/limonada-coco.jpg"
+        }
+      ]
+    },
+    {
+      "id": "picadas",
+      "nombre": "Picadas",
+      "imagen": "/images/picadas.jpg",
+      "platillos": [
+        {
+          "id": "picada-personal",
+          "nombre": "Picada Personal",
+          "descripcion": "Lomo fino 150gr, pechuga a la plancha 75gr, cerdo 75gr, salchicha 1 unid, papa criolla 150gr, papa a la francesa 80 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "31,500",
+          "imagen": "/images/picada-personal.jpg"
+        }
+      ]
+    },
+    {
+      "id": "entradas",
+      "nombre": "Entradas",
+      "imagen": "/images/entradas.jpg",
+      "platillos": [
+        {
+          "id": "caribe-verano",
+          "nombre": "Caribe de queso o Camarones",
+          "descripcion": "Deditos de queso o camarones empanizados",
+          "precio": "10,800",
+          "imagen": "/images/caribe.jpg"
+        }
+      ]
+    },
+    {
+      "id": "perros",
+      "nombre": "Perros",
+      "imagen": "/images/perros.jpg",
+      "platillos": [
+        {
+          "id": "perro-sencillo",
+          "nombre": "Perro Sencillo",
+          "descripcion": "Salchicha Americana, pan de coleslaw, papa ripio, queso costeño, salsa de la casa y salsa de la casa",
+          "precio": "12,000",
+          "imagen": "/images/perro-sencillo.jpg"
+        },
+        {
+          "id": "perro-mixto",
+          "nombre": "Perro Mixto",
+          "descripcion": "Salchicha Americana, carne mechada 75gr, pechuga a la plancha 75gr, pan de coleslaw, papa ripio, queso costeño, cebolla roja, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
+          "precio": "26,000",
+          "imagen": "/images/perro-mixto.jpg"
+        },
+        {
+          "id": "perro-entre-panas",
+          "nombre": "Perro Entre Panas",
+          "descripcion": "Salchicha Americana, carne mechada 75gr, pechuga a la plancha 75gr, pan de coleslaw, papa ripio, queso costeño, cebolla roja, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
+          "precio": "23,500",
+          "imagen": "/images/perro-entre-panas.jpg"
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "nombre": "Burgers",
+      "imagen": "/images/burgers.jpg",
+      "platillos": [
+        {
+          "id": "hamburguesa-romana",
+          "nombre": "Hamburguesa Romana",
+          "descripcion": "Carne mechada de ternera bañada en salsa de cerveza 150gr, queso mozzarella, ensalada, tomate, cebolla roja, lechuga, cerveza y papa a la francesa 80gr",
+          "precio": "22,800",
+          "imagen": "/images/hamburguesa-romana.jpg"
+        },
+        {
+          "id": "hamburguesa-napoletana",
+          "nombre": "Hamburguesa Napoletana",
+          "descripcion": "Croqueta de ternera 150gr, jamón, queso cheddar, queso mozzarella, lechuga, tomate, salsa de la casa y papa a la francesa 80gr",
+          "precio": "22,800",
+          "imagen": "/images/hamburguesa-napoletana.jpg"
+        },
+        {
+          "id": "hamburguesa-crispy-chicken",
+          "nombre": "Hamburguesa Crispy Chicken",
+          "descripcion": "Pechuga apanada 150gr, jamón, lechuga, queso cheddar, ensalada, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
+          "precio": "22,800",
+          "imagen": "/images/hamburguesa-crispy.jpg"
+        },
+        {
+          "id": "hamburguesa-cuatro-estaciones",
+          "nombre": "Hamburguesa Cuatro Estaciones",
+          "descripcion": "Dos croquetas de ternera 150gr, tocrino, queso cheddar, queso mozzarella, queso costeño, cebolla caramelizada roja, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
+          "precio": "36,100",
+          "imagen": "/images/hamburguesa-cuatro.jpg"
+        },
+        {
+          "id": "hamburguesa-entre-panas",
+          "nombre": "Hamburguesa Entre Panas",
+          "descripcion": "Croqueta de ternera 150gr, pechuga a la parrilla 150gr, lomo de cerdo 100gr, salami de cerdo, jamón, queso cheddar, cebolla roja, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
+          "precio": "40,000",
+          "imagen": "/images/hamburguesa-entre-panas.jpg"
+        }
+      ]
+    },
+    {
+      "id": "brochetas",
+      "nombre": "Brochetas",
+      "imagen": "/images/brochetas.jpg",
+      "platillos": [
+        {
+          "id": "brocheta-carne",
+          "nombre": "Brocheta de Carne",
+          "descripcion": "Brocheta de carne mechada con cebolla y pimentón",
+          "precio": "20,000",
+          "imagen": "/images/brocheta-carne.jpg"
+        },
+        {
+          "id": "brocheta-pollo",
+          "nombre": "Brocheta de Pollo",
+          "descripcion": "Brocheta de pechuga a la plancha con cebolla y pimentón",
+          "precio": "20,000",
+          "imagen": "/images/brocheta-pollo.jpg"
+        },
+        {
+          "id": "brocheta-mixta",
+          "nombre": "Brocheta Mixta",
+          "descripcion": "Brocheta de carne y pollo con cebolla y pimentón",
+          "precio": "20,000",
+          "imagen": "/images/brocheta-mixta.jpg"
+        }
+      ]
+    },
+    {
+      "id": "maicitos-esp",
+      "nombre": "Maicitos",
+      "imagen": "/images/maicitos-esp.jpg",
+      "platillos": [
+        {
+          "id": "maicito-clasico",
+          "nombre": "Maicito Clásico (mazorcada)",
+          "descripcion": "Pechuga a la plancha 150gr, mazorcada, mantequilla, maíz dulce y salsa de la casa",
+          "precio": "16,000",
+          "imagen": "/images/maicito-clasico.jpg"
+        },
+        {
+          "id": "maicito-carne",
+          "nombre": "Maicito de Carne (mazorcada)",
+          "descripcion": "Carne mechada de ternera 150gr, tocineta, queso mozzarella, maíz dulce y salsa de la casa",
+          "precio": "23,500",
+          "imagen": "/images/maicito-carne.jpg"
+        }
+      ]
+    }
+  ]
+}

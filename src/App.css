@@ -1,38 +1,610 @@
-.App {
-  text-align: center;
+/* Variables CSS - Sistema de diseño profesional */
+:root {
+  /* Colores principales - Paleta de marca */
+  --brand-primary: #e63946;
+  --brand-secondary: #f77f00;
+  --brand-accent: #fcbf49;
+  --brand-dark: #d62828;
+  
+  /* Fondos */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #1f1f1f;
+  --bg-overlay: rgba(10, 10, 10, 0.95);
+  
+  /* Textos */
+  --text-primary: #ffffff;
+  --text-secondary: #b8b8b8;
+  --text-muted: #808080;
+  --text-price: #f77f00;
+  
+  /* Efectos y sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(230, 57, 70, 0.3);
+  
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Bordes y radios */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  
+  /* Transiciones */
+  --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Tipografía */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Reset profesional */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importar fuente moderna */
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;600;700;800;900');
+
+/* Base del documento */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Fondo con patrón de marca */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(230, 57, 70, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(247, 127, 0, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-primary) 0%, rgba(20, 20, 20, 0.95) 100%);
   pointer-events: none;
+  z-index: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Contenedor principal */
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header profesional */
+.app-header {
+  background-image: url('../src/assets/banner1.png');    backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(230, 57, 70, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  
+  /* Centrado del contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del título */
+.title-container {
+  background: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  opacity: 80%;
+}
+
+.title-container::before,
+.title-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 80px; /* Ancho de la línea */
+  height: 1px; /* Grosor de la línea */
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--brand-primary) 50%,
+    transparent 100%);
+  transform: translateY(-50%);
+}
+
+.title-container::before {
+  right: calc(100% - 100px); 
+}
+
+.title-container::after {
+  left: calc(100% - 100px);
+}
+
+
+/* Título del restaurante */
+.restaurant-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  position: relative;
+  padding: var(--spacing-sm) 0;
+  
+  /* Efecto de texto premium */
+  background: linear-gradient(135deg, 
+    var(--brand-primary) 0%, 
+    var(--brand-secondary) 50%, 
+    var(--brand-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  /* Sombra de texto sutil */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: var(--spacing-lg) var(--spacing-sm);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Grid de categorías - Diseño moderno */
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+/* Contenedor de categoría */
+.categoria-container {
+  transition: all var(--transition-slow);
+  position: relative;
+}
+
+.categoria-container.open {
+  grid-column: 1 / -1;
+}
+
+/* Tarjeta de categoría - Diseño premium */
+.categoria-card {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efecto de hover elegante */
+.categoria-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, 
+    var(--brand-primary), 
+    var(--brand-secondary));
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: -1;
+}
+
+.categoria-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    transparent 0%, 
+    rgba(230, 57, 70, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.categoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  border-color: rgba(230, 57, 70, 0.3);
+}
+
+.categoria-card:hover::before {
+  opacity: 0.1;
+}
+
+.categoria-card:hover::after {
+  opacity: 1;
+}
+
+/* Imagen de logo en cabecera */
+.logo-image {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+  background: linear-gradient(180deg, 
+    rgba(26, 26, 26, 0.5) 0%, 
+    rgba(26, 26, 26, 0.8) 100%);
+  transition: all var(--transition-base);
+}
+
+/* Imagen de categoría */
+.categoria-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: linear-gradient(180deg, 
+    rgba(26, 26, 26, 0.5) 0%, 
+    rgba(26, 26, 26, 0.8) 100%);
+  transition: all var(--transition-base);
+}
+
+.categoria-card:hover .categoria-image {
+  transform: scale(1.05);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Nombre de categoría */
+.categoria-nombre {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: var(--spacing-md);
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--text-primary);
+  background: linear-gradient(180deg, 
+    rgba(26, 26, 26, 0.95) 0%, 
+    rgba(10, 10, 10, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* Contenedor de platillos - Diseño moderno */
+.platillos-container {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3);
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  
+  animation: expandIn var(--transition-slow) ease-out;
 }
 
-@keyframes App-logo-spin {
+@keyframes expandIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tarjeta de platillo - Estilo premium */
+.platillo-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Línea de acento */
+.platillo-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    var(--brand-primary) 0%, 
+    var(--brand-secondary) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+}
+
+.platillo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-card-hover);
+}
+
+.platillo-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Imagen de platillo */
+.platillo-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: var(--bg-secondary);
+  transition: all var(--transition-base);
+}
+
+.platillo-card:hover .platillo-image {
+  transform: scale(1.03);
+}
+
+/* Contenido del platillo */
+.platillo-content {
+  padding: var(--spacing-md);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nombre de platillo */
+.platillo-nombre {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.3;
+}
+
+/* Descripción de platillo */
+.platillo-descripcion {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Precio de platillo */
+.platillo-precio {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-price);
+  margin-top: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.platillo-precio::before {
+  content: 'COL$  ';
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Placeholder para imágenes */
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.placeholder-image::before {
+  content: '🍽️';
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.1;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  border-radius: 6px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--brand-secondary) 0%, var(--brand-primary) 100%);
+}
+
+
+.footer {
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Media queries  */
+@media (max-width: 1024px) {
+  .categorias-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  .platillos-container {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 15px;
+  }
+  
+  .restaurant-title {
+    font-size: 1.5rem;
+  }
+  
+  .title-container::before,
+  .title-container::after {
+    display: none;
+  }
+
+  .logo-image {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .categoria-card {
+    height: 240px;
+  }
+  
+  .categoria-image {
+    height: 150px;
+  }
+  
+  .platillos-container {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-md);
+  }
+  
+  .platillo-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header{
+    padding: 10px;
+  }
+
+  .logo-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .main-content {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+  
+  .categorias-grid {
+    gap: var(--spacing-sm);
+  }
+  
+  .categoria-nombre {
+    font-size: 1rem;
+    padding: var(--spacing-sm);
+  }
+  
+  .platillo-content {
+    padding: var(--spacing-sm);
+  }
+  
+  .platillo-nombre {
+    font-size: 1.125rem;
+  }
+  
+  .platillo-precio {
+    font-size: 1.25rem;
+  }
+}
+
+/* Optimización de rendimiento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Accesibilidad mejorada */
+.categoria-card:focus-visible,
+.platillo-card:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+/* Estados de carga */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Microinteracciones */
+@media (hover: hover) {
+  .categoria-card:active {
+    transform: scale(0.98);
+  }
+  
+  .platillo-card:active {
+    transform: scale(0.99);
   }
 }
