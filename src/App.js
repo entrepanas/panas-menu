@@ -5,6 +5,7 @@ import menuData from './menuData.json';
 
 import CategoriaCard from './components/CategoriaCard';
 import OptimizedImage from './components/OptimizedImage';
+import Footer from './components/Footer';
 import Logo from './assets/logo.webp';
 
 
@@ -47,10 +48,8 @@ function App() {
         </div>
       </main>
 
-        <div className="footer">
-          <p>© 2025 Entre Panas. All rights reserved.</p> 
-        </div>
-
+      <Footer />
+      
     </div>
   );
 }

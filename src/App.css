@@ -104,8 +104,10 @@ body::before {
 
 /* Header profesional */
 .app-header {
-  background-image: url('../src/assets/banner1.png');    backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-image: url('./assets/banner1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -128,6 +130,10 @@ body::before {
   width: 100%;
   position: relative;
   opacity: 80%;
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .title-container::before,
@@ -454,6 +460,292 @@ body::before {
   position: absolute;
   font-size: 3rem;
   opacity: 0.1;
+}
+
+
+/* Colores del enlace */
+.custom-link:link {
+  color:var(--brand-primary); 
+  text-decoration: none; 
+}
+
+.custom-link:hover {
+  color: var(--brand-secondary); 
+  text-decoration: underline; 
+}
+
+.custom-link:visited {
+  color: var(--brand-accent); 
+}
+
+.custom-link:active {
+  color: var(--bg-card-hover);
+}
+
+
+/* Contenedor principal del footer */
+.footer-container {
+  background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+  color: var(--text-secondary);
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Patrón decorativo sutil */
+.footer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--brand-primary) 50%, 
+    transparent 100%);
+}
+
+/* Contenido principal del footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+/* Secciones del footer */
+.footer-section {
+  text-align: center;
+}
+
+/* Títulos de sección */
+.footer-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: var(--brand-primary);
+}
+
+/* Enlaces del footer */
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+  font-size: 0.95rem;
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Iconos */
+.footer-icon {
+  width: 40px;  /* Aumentar tamaño para mayor visibilidad */
+  height: 40px;
+  margin: 0 auto;  /* Centrar el icono */
+  display: block;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+/* Hover en los iconos independientes */
+.footer-section:hover .footer-icon {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.footer-section:nth-child(1):hover .footer-icon {
+  color: var(--brand-primary);
+}
+
+.footer-section:nth-child(2):hover .footer-icon {
+  color: var(--brand-secondary);
+}
+
+.footer-section:nth-child(3):hover .footer-icon {
+  color: #1877f2;
+}
+
+.location-link:hover .footer-icon {
+  color: var(--brand-primary);
+}
+
+.phone-link:hover .footer-icon {
+  color: var(--brand-secondary);
+}
+
+.social-link:hover .footer-icon {
+  color: #1877f2; /* Facebook blue */
+  transform: scale(1.1);
+}
+
+/* Divider */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    transparent 100%);
+  margin: var(--spacing-lg) auto;
+  max-width: 800px;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-md);
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, 
+    var(--brand-primary) 0%, 
+    var(--brand-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+  
+  .footer-section {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .footer-link {
+    justify-content: center;
+  }
+  
+  .footer-title {
+    font-size: 1rem;
+  }
+  
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animación sutil al cargar */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-section {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.footer-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.footer-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.footer-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Efecto hover premium */
+.footer-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.footer-link:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* Accesibilidad */
+.footer-link:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+/* Modo oscuro ya aplicado por defecto */
+
+/* Print styles */
+@media print {
+  .footer-container {
+    background: white;
+    color: black;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-link {
+    color: black;
+  }
 }
 
 /* Scrollbar personalizada */
