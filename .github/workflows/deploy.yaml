@@ -40,4 +40,6 @@ jobs:
             sudo rm -rf /var/www/app
             sudo mkdir -p /var/www/app
             sudo cp -r build/* /var/www/app/
+            echo "Restarting systemd service…"
+            sudo systemctl restart react-app
             echo "PROD deployment finished."
