@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/panas-menu/static/css/main.86f127f7.css",
-    "main.js": "/panas-menu/static/js/main.bd7f1a78.js",
-    "static/js/453.8529a338.chunk.js": "/panas-menu/static/js/453.8529a338.chunk.js",
-    "static/media/salchi.webp": "/panas-menu/static/media/salchi.e13cf5927990375359af.webp",
-    "static/media/banner1.webp": "/panas-menu/static/media/banner1.c4857b60a71821d830c1.webp",
-    "static/media/logo.webp": "/panas-menu/static/media/logo.bac5bf1b79de19f6636b.webp",
-    "index.html": "/panas-menu/index.html",
-    "main.86f127f7.css.map": "/panas-menu/static/css/main.86f127f7.css.map",
-    "main.bd7f1a78.js.map": "/panas-menu/static/js/main.bd7f1a78.js.map",
-    "453.8529a338.chunk.js.map": "/panas-menu/static/js/453.8529a338.chunk.js.map"
+    "main.css": "/static/css/main.e9426db0.css",
+    "main.js": "/static/js/main.508b3a74.js",
+    "static/js/453.8529a338.chunk.js": "/static/js/453.8529a338.chunk.js",
+    "static/media/salchi.webp": "/static/media/salchi.e13cf5927990375359af.webp",
+    "static/media/banner1.webp": "/static/media/banner1.c4857b60a71821d830c1.webp",
+    "static/media/logo.webp": "/static/media/logo.bac5bf1b79de19f6636b.webp",
+    "index.html": "/index.html",
+    "main.e9426db0.css.map": "/static/css/main.e9426db0.css.map",
+    "main.508b3a74.js.map": "/static/js/main.508b3a74.js.map",
+    "453.8529a338.chunk.js.map": "/static/js/453.8529a338.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f127f7.css",
-    "static/js/main.bd7f1a78.js"
+    "static/css/main.e9426db0.css",
+    "static/js/main.508b3a74.js"
   ]
 }
