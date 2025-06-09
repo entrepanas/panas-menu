@@ -1,0 +1,43 @@
+name: Deploy to AWS EC2
+
+permissions:
+  id-token: write
+  contents: read
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  deploy_prod:
+    name: Deploy PROD Environment
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    environment: prod
+
+    steps:
+      - name: Deploy to EC2 (prod)
+        uses: appleboy/ssh-action@master
+        with:
+          host:     ${{ secrets.EC2_HOST_PROD }}
+          username: ec2-user
+          key:      ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            export NODE_ENV=production
+            cd /home/ec2-user
+            echo "Removing any previous app folder…"
+            rm -rf app
+            echo "Cloning repository (main branch)…"
+            git clone --depth 1 --branch main --single-branch https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git app
+            cd app
+            echo "Installing dependencies…"
+            npm ci
+            echo "Building React app…"
+            npm run build
+            echo "Copying build files to production folder…"
+            sudo rm -rf /var/www/app
+            sudo mkdir -p /var/www/app
+            sudo cp -r build/* /var/www/app/
+            echo "PROD deployment finished."
