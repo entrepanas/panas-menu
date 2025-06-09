@@ -18,6 +18,37 @@ jobs:
     environment: prod
 
     steps:
+      # 1. Checkout y build en Actions
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Archive build artifacts
+        run: tar -czf build.tar.gz build
+
+      # 2. Copiar sólo el tarball al EC2
+      - name: Copy build to EC2
+        uses: appleboy/scp-action@master
+        with:
+          host:     ${{ secrets.EC2_HOST_PROD }}
+          username: ec2-user
+          key:      ${{ secrets.EC2_SSH_KEY }}
+          source:   build.tar.gz
+          target:   /home/ec2-user
+
+      # 3. Desplegar en EC2, respetando el .service
       - name: Deploy to EC2 (prod)
         uses: appleboy/ssh-action@master
         with:
@@ -26,20 +57,23 @@ jobs:
           key:      ${{ secrets.EC2_SSH_KEY }}
           script: |
             export NODE_ENV=production
+
             cd /home/ec2-user
-            echo "Removing any previous app folder…"
+
+            echo "Eliminando build anterior…"
             rm -rf app
-            echo "Cloning repository (main branch)…"
-            git clone --depth 1 --branch main --single-branch https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git app
-            cd app
-            echo "Installing dependencies…"
-            npm ci
-            echo "Building React app…"
-            npm run build
-            echo "Copying build files to production folder…"
-            sudo rm -rf /var/www/app
-            sudo mkdir -p /var/www/app
-            sudo cp -r build/* /var/www/app/
-            echo "Restarting systemd service…"
+
+            echo "Preparando carpeta de app…"
+            mkdir -p app
+
+            echo "Descomprimiendo nuevo build…"
+            tar -xzf build.tar.gz -C app
+
+            echo "Permisos correctos…"
+            sudo chown -R ec2-user:ec2-user app
+
+            echo "Reiniciando servicio systemd…"
+            sudo systemctl daemon-reload
             sudo systemctl restart react-app
-            echo "PROD deployment finished."
+
+            echo "✔ Despliegue PROD finalizado."
