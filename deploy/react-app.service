@@ -1,0 +1,12 @@
+[Unit]
+Description=React Application Service (Static Server)
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user/app
+ExecStart=/usr/bin/npx serve -s build -l 3000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
