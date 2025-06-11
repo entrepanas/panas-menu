@@ -169,6 +169,7 @@ body::before {
   text-align: center;
   position: relative;
   padding: var(--spacing-sm) 0;
+  margin-right: 20px;
   
   /* Efecto de texto premium */
   background: linear-gradient(135deg, 
