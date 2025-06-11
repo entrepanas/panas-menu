@@ -2,13 +2,11 @@
 import React from 'react';
 import OptimizedImage from './OptimizedImage';
 import '../App.css';
-import ImagenMock from '../assets/salchi.webp';
 
 const PlatilloCard = React.memo(({ platillo }) => (
   <div className="platillo-card">
     <OptimizedImage
-      src={ImagenMock}
-      //src={platillo.imagen}
+      src={platillo.imagen}
       alt={platillo.nombre}
       className="platillo-image"
     />

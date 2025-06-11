@@ -745,7 +745,7 @@ body::before {
 
 /* Print styles */
 @media print {
-  .footer-container {
+  .app {
     background: white;
     color: black;
     border-top: 1px solid #ccc;
