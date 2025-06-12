@@ -1,97 +1,6 @@
 {
   "categorias": [
     {
-      "id": "salchipapa",
-      "nombre": "Salchipapa",
-      "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg",
-      "platillos": [
-        {
-          "id": "salchipapa-clasica",
-          "nombre": "Salchipapa Clásica",
-          "descripcion": "Papas a la francesa 200gr, salchicha 2 unidades, queso costeño 80gr, ensalada y salsa de la casa",
-          "precio": "24,000",
-          "imagen": "/assets/Salchipapa-clasica.jpeg"
-        },
-        {
-          "id": "salchipapa-carne-mechada",
-          "nombre": "Salchipapa de Carne Mechada",
-          "descripcion": "Carne para mechar 100gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño 80gr, ensalada y salsa de la casa",
-          "precio": "32,000",
-          "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg"
-        },
-        {
-          "id": "salchipapa-pollo",
-          "nombre": "Salchipapa de Pollo",
-          "descripcion": "Pechuga a la plancha 150gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño 80gr, ensalada y salsa de la casa",
-          "precio": "32,000",
-          "imagen": "/assets/Salchipapa-clasica.jpeg"
-        },
-        {
-          "id": "salchipapa-mixta",
-          "nombre": "Salchipapa Mixta",
-          "descripcion": "Carne para mechar 100gr, pechuga a la plancha 150gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño, ensalada y salsa de la casa",
-          "precio": "38,000",
-          "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "parrilladas",
-      "nombre": "Parrilladas",
-      "imagen": "/assets/Parrilla-de-4-libras.jpeg",
-      "platillos": [
-        {
-          "id": "parrilla-libra",
-          "nombre": "Parrilla de 1 LB",
-          "descripcion": "Lomo fino 100gr, pechuga a la plancha 300gr, lomo de cerdo 100gr, chorizo 2 unidades, yuca, platano, ensalada",
-          "precio": "58,000",
-          "imagen": "/assets/Parrilla-de-libra.jpeg"
-        },
-        {
-          "id": "parrilla-dos-libras",
-          "nombre": "Parrilla de 2 LB",
-          "descripcion": "Lomo fino 200gr, pechuga a la plancha 600gr, lomo de cerdo 200gr, chorizo 4 unidades, yuca, platano, ensalada",
-          "precio": "120,000",
-          "imagen": "/assets/Parrilla-de-libra2.jpeg"
-        },
-        {
-          "id": "parrilla-cuatro-libras",
-          "nombre": "Parrilla de 4 LB",
-          "descripcion": "Lomo fino 400gr, pechuga a la plancha 1200gr, lomo de cerdo 400gr, chorizo 8 unidades, yuca, platano, ensalada",
-          "precio": "220,000",
-          "imagen": "/assets/Parrilla-de-4-libras.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "picadas",
-      "nombre": "Picadas",
-      "imagen": "/assets/Picada-personal-2.jpeg",
-      "platillos": [
-        {
-          "id": "picada-personal",
-          "nombre": "Picada Personal",
-          "descripcion": "Lomo fino 50gr, pechuga a la plancha 75gr, chorizo 1 unidad, salchicha 1 unidad, papa criolla 100gr, papa a la francesa 100 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
-          "precio": "32,000",
-          "imagen": "/assets/Picada-personal.jpeg"
-        },
-        {
-          "id": "picada-personal2",
-          "nombre": "Picada para dos",
-          "descripcion": "Lomo fino 100gr, pechuga a la plancha 150gr, chorizo 2 unidades, salchicha 2 unidades, papa criolla 200gr, papa a la francesa 200 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
-          "precio": "60,000",
-          "imagen": "/assets/Picada-personal-2.jpeg"
-        },
-        {
-          "id": "picada-familiar",
-          "nombre": "Picada familiar",
-          "descripcion": "Lomo fino 200gr, pechuga a la plancha 300gr, chorizo 3 unidades, salchicha 3 unidades, papa criolla 300gr, papa a la francesa 300 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
-          "precio": "110,000",
-          "imagen": "/assets/Picada-para-dos.jpeg"
-        }
-      ]
-    },
-    {
       "id": "entradas",
       "nombre": "Entradas",
       "imagen": "/assets/dedos-queso.webp",
@@ -116,62 +25,6 @@
           "descripcion": "Deliciosos deditos de queso",
           "precio": "10,000",
           "imagen": "/assets/dedos-queso.webp"
-        }
-      ]
-    },
-    {
-      "id": "croquetas",
-      "nombre": "Croquetas",
-      "imagen": "/assets/croqueta.webp",
-      "platillos": [
-        {
-          "id": "croqueta-mechada",
-          "nombre": "Croqueta de carne mechada",
-          "descripcion": "Pecho (carne para mechar) 100gr, salsa de la casa",
-          "precio": "13,000",
-          "imagen": "/assets/croqueta.webp"
-        },
-        {
-          "id": "croqueta-pollo",
-          "nombre": "Croqueta de pollo",
-          "descripcion": "Pechuga de pollo 150gr, salsa de la casa",
-          "precio": "9,000",
-          "imagen": "/assets/croqueta.webp"
-        },
-        {
-          "id": "croqueta-ternera",
-          "nombre": "Croqueta de ternera",
-          "descripcion": "Carne de molida de cerdo 20gr, carne molida de res 80gr, salsa de la casa",
-          "precio": "7,000",
-          "imagen": "/assets/croqueta.webp"
-        }
-      ]
-    },
-    {
-      "id": "perros",
-      "nombre": "Perros",
-      "imagen": "/assets/perros.webp",
-      "platillos": [
-        {
-          "id": "perro-sencillo",
-          "nombre": "Perro sencillo",
-          "descripcion": "Salchicha Americana 1 unidad, pan de perro, papa ripio 50gr, queso costeño 50gr y salsa de la casa",
-          "precio": "12,000",
-          "imagen": "/assets/perros.webp"
-        },
-        {
-          "id": "perro-mixto",
-          "nombre": "Perro mixto",
-          "descripcion": "Salchicha Americana 1 unidad, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso costeño 50gr, salsa de la casa, papa a la francesa 100gr y ensalada",
-          "precio": "25,000",
-          "imagen": "/assets/perros.webp"
-        },
-        {
-          "id": "perro-entre-panas",
-          "nombre": "Perro Entre Panas",
-          "descripcion": "Salchicha Americana 1 unidad, tocineta 50gr, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso cheddar, salsa de la casa, papa a la francesa 100gr y ensalada",
-          "precio": "28,000",
-          "imagen": "/assets/perros.webp"
         }
       ]
     },
@@ -222,6 +75,34 @@
           "precio": "35,000",
           "imagen": "/assets/Hamburguesa-napolitana-3.jpeg"
           
+        }
+      ]
+    },
+    {
+      "id": "perros",
+      "nombre": "Perros",
+      "imagen": "/assets/perros.webp",
+      "platillos": [
+        {
+          "id": "perro-sencillo",
+          "nombre": "Perro sencillo",
+          "descripcion": "Salchicha Americana 1 unidad, pan de perro, papa ripio 50gr, queso costeño 50gr y salsa de la casa",
+          "precio": "12,000",
+          "imagen": "/assets/perros.webp"
+        },
+        {
+          "id": "perro-mixto",
+          "nombre": "Perro mixto",
+          "descripcion": "Salchicha Americana 1 unidad, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso costeño 50gr, salsa de la casa, papa a la francesa 100gr y ensalada",
+          "precio": "25,000",
+          "imagen": "/assets/perros.webp"
+        },
+        {
+          "id": "perro-entre-panas",
+          "nombre": "Perro Entre Panas",
+          "descripcion": "Salchicha Americana 1 unidad, tocineta 50gr, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso cheddar, salsa de la casa, papa a la francesa 100gr y ensalada",
+          "precio": "28,000",
+          "imagen": "/assets/perros.webp"
         }
       ]
     },
@@ -278,6 +159,127 @@
           "descripcion": "Maiz dulce en bolsa 100gr, pecho (carne para mechar) 50gr, pechuga de pollo 150gr, crema de leche 100gr, tostadas mantequilla, queso mozzarella y salsa de la casa",
           "precio": "29,000",
           "imagen": "/assets/maicitos.webp"
+        }
+      ]
+    },
+    {
+      "id": "salchipapa",
+      "nombre": "Salchipapa",
+      "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg",
+      "platillos": [
+        {
+          "id": "salchipapa-clasica",
+          "nombre": "Salchipapa Clásica",
+          "descripcion": "Papas a la francesa 200gr, salchicha 2 unidades, queso costeño 80gr, ensalada y salsa de la casa",
+          "precio": "24,000",
+          "imagen": "/assets/Salchipapa-clasica.jpeg"
+        },
+        {
+          "id": "salchipapa-carne-mechada",
+          "nombre": "Salchipapa de Carne Mechada",
+          "descripcion": "Carne para mechar 100gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño 80gr, ensalada y salsa de la casa",
+          "precio": "32,000",
+          "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg"
+        },
+        {
+          "id": "salchipapa-pollo",
+          "nombre": "Salchipapa de Pollo",
+          "descripcion": "Pechuga a la plancha 150gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño 80gr, ensalada y salsa de la casa",
+          "precio": "32,000",
+          "imagen": "/assets/Salchipapa-clasica.jpeg"
+        },
+        {
+          "id": "salchipapa-mixta",
+          "nombre": "Salchipapa Mixta",
+          "descripcion": "Carne para mechar 100gr, pechuga a la plancha 150gr, salchicha 2 unidades, papa a la francesa 200gr,  queso costeño, ensalada y salsa de la casa",
+          "precio": "38,000",
+          "imagen": "/assets/Salchipapa-de-carne-esmechada.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "picadas",
+      "nombre": "Picadas",
+      "imagen": "/assets/Picada-personal-2.jpeg",
+      "platillos": [
+        {
+          "id": "picada-personal",
+          "nombre": "Picada Personal",
+          "descripcion": "Lomo fino 50gr, pechuga a la plancha 75gr, chorizo 1 unidad, salchicha 1 unidad, papa criolla 100gr, papa a la francesa 100 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "32,000",
+          "imagen": "/assets/Picada-personal.jpeg"
+        },
+        {
+          "id": "picada-personal2",
+          "nombre": "Picada para dos",
+          "descripcion": "Lomo fino 100gr, pechuga a la plancha 150gr, chorizo 2 unidades, salchicha 2 unidades, papa criolla 200gr, papa a la francesa 200 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "60,000",
+          "imagen": "/assets/Picada-personal-2.jpeg"
+        },
+        {
+          "id": "picada-familiar",
+          "nombre": "Picada familiar",
+          "descripcion": "Lomo fino 200gr, pechuga a la plancha 300gr, chorizo 3 unidades, salchicha 3 unidades, papa criolla 300gr, papa a la francesa 300 gr, plátano, queso costeño, cebolla roja, tomate, lechuga y salsa de la casa",
+          "precio": "110,000",
+          "imagen": "/assets/Picada-para-dos.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "parrilladas",
+      "nombre": "Parrilladas",
+      "imagen": "/assets/Parrilla-de-4-libras.jpeg",
+      "platillos": [
+        {
+          "id": "parrilla-libra",
+          "nombre": "Parrilla de 1 LB",
+          "descripcion": "Lomo fino 100gr, pechuga a la plancha 300gr, lomo de cerdo 100gr, chorizo 2 unidades, yuca, platano, ensalada",
+          "precio": "58,000",
+          "imagen": "/assets/Parrilla-de-libra.jpeg"
+        },
+        {
+          "id": "parrilla-dos-libras",
+          "nombre": "Parrilla de 2 LB",
+          "descripcion": "Lomo fino 200gr, pechuga a la plancha 600gr, lomo de cerdo 200gr, chorizo 4 unidades, yuca, platano, ensalada",
+          "precio": "120,000",
+          "imagen": "/assets/Parrilla-de-libra2.jpeg"
+        },
+        {
+          "id": "parrilla-cuatro-libras",
+          "nombre": "Parrilla de 4 LB",
+          "descripcion": "Lomo fino 400gr, pechuga a la plancha 1200gr, lomo de cerdo 400gr, chorizo 8 unidades, yuca, platano, ensalada",
+          "precio": "220,000",
+          "imagen": "/assets/Parrilla-de-4-libras.jpeg"
+        }
+      ]
+    },
+    
+    
+    {
+      "id": "croquetas",
+      "nombre": "Croquetas",
+      "imagen": "/assets/croq1.png",
+      "platillos": [
+        {
+          "id": "croqueta-mechada",
+          "nombre": "Croqueta de carne mechada",
+          "descripcion": "Pecho (carne para mechar) 100gr, salsa de la casa",
+          "precio": "13,000",
+          "imagen": "/assets/croq2.png"
+        },
+        {
+          "id": "croqueta-pollo",
+          "nombre": "Croqueta de pollo",
+          "descripcion": "Pechuga de pollo 150gr, salsa de la casa",
+          "precio": "9,000",
+          "imagen": "/assets/croq2.png"
+        },
+        {
+          "id": "croqueta-ternera",
+          "nombre": "Croqueta de ternera",
+          "descripcion": "Carne de molida de cerdo 20gr, carne molida de res 80gr, salsa de la casa",
+          "precio": "7,000",
+          "imagen": "/assets/croq2.png"
         }
       ]
     },
