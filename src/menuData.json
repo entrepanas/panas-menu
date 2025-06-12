@@ -36,7 +36,7 @@
         {
           "id": "hamburguesa-romana",
           "nombre": "Hamburguesa Romana",
-          "descripcion": "Croqueta de carne mechada, queso mozzarella, ensalada, tomate, cebolla roja, lechuga, cerveza y papa a la francesa 100gr",
+          "descripcion": "Croqueta de carne mechada, queso mozzarella, ensalada, tomate, cebolla roja, lechuga, salsa de cerveza y papa a la francesa 100gr",
           "precio": "25,000",
           "imagen": "/assets/Hamburguesa-romana.jpeg"
         },
