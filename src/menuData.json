@@ -258,7 +258,7 @@
     {
       "id": "croquetas",
       "nombre": "Croquetas",
-      "imagen": "/assets/croq1.png",
+      "imagen": "/assets/croq3.webp",
       "platillos": [
         {
           "id": "croqueta-mechada",
