@@ -44,7 +44,7 @@
           "id": "hamburguesa-napolitana",
           "nombre": "Hamburguesa Napolitana",
           "descripcion": "Croqueta de ternera, jamón, queso cheddar, cebolla roja, lechuga, tomate, salsa de la casa y papa a la francesa 100gr",
-          "precio": "22,800",
+          "precio": "22,000",
           "imagen": "/assets/Hamburguesa-napolitana.jpeg"
         },
         {
@@ -263,7 +263,7 @@
         {
           "id": "croqueta-mechada",
           "nombre": "Croqueta de carne mechada",
-          "descripcion": "Pecho (carne para mechar) 100gr, salsa de la casa",
+          "descripcion": "Carne mechada 100gr, salsa de la casa",
           "precio": "13,000",
           "imagen": "/assets/croq2.png"
         },

@@ -14,86 +14,83 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
       boxSizing: 'border-box',
     },
     page: {
-      padding: '30px 40px',
+      padding: '25px 35px',
       minHeight: '297mm',
-      maxHeight: '297mm',
       width: '210mm',
       margin: '0 auto',
       pageBreakAfter: 'always',
       position: 'relative',
       display: 'flex',
       flexDirection: 'column',
-      overflow: 'hidden',
     },
     lastPage: {
       pageBreakAfter: 'auto',
     },
     header: {
       textAlign: 'center',
-      marginBottom: '25px',
-      padding: '20px 0',
-      borderBottom: '3px solid #e63946',
+      marginBottom: '20px',
+      padding: '15px 0',
+      borderBottom: '2px solid #e63946',
       backgroundColor: '#f5f5f5',
     },
     logoContainer: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '20px',
-      marginBottom: '10px',
+      gap: '15px',
+      marginBottom: '8px',
     },
     logo: {
-      width: '80px',
-      height: '80px',
+      width: '60px',
+      height: '60px',
       borderRadius: '50%',
-      border: '3px solid #e63946',
-      padding: '5px',
+      border: '2px solid #e63946',
+      padding: '4px',
       backgroundColor: '#ffffff',
     },
     title: {
-      fontSize: '2.8rem',
+      fontSize: '2.2rem',
       color: '#e63946',
       fontWeight: '900',
       textTransform: 'uppercase',
-      letterSpacing: '2px',
+      letterSpacing: '1.5px',
       margin: '0',
     },
     subtitle: {
-      fontSize: '1.1rem',
+      fontSize: '0.9rem',
       color: '#f77f00',
       fontWeight: '600',
-      marginTop: '8px',
+      marginTop: '5px',
     },
     categoriesContainer: {
       flex: 1,
-      overflow: 'hidden',
     },
     categorySection: {
-      marginBottom: '20px',
+      marginBottom: '10px',
       pageBreakInside: 'avoid',
       breakInside: 'avoid',
     },
     categoryTitle: {
-      fontSize: '2rem',
+      fontSize: '1.5rem',
       fontWeight: '900',
       color: '#e63946',
       textTransform: 'uppercase',
       borderBottom: '2px solid #e63946',
-      paddingBottom: '8px',
-      marginBottom: '15px',
-      letterSpacing: '1px',
+      paddingBottom: '5px',
+      marginBottom: '10px',
+      letterSpacing: '0.5px',
     },
     grid: {
       display: 'grid',
       gridTemplateColumns: 'repeat(2, 1fr)',
-      gap: '12px',
-      marginBottom: '15px',
+      gap: '8px',
+      marginBottom: '5px',
     },
     item: {
       backgroundColor: '#f9f9f9',
       border: '1px solid #e0e0e0',
-      borderRadius: '8px',
-      padding: '12px 15px',
+      borderRadius: '6px',
+      padding: '8px 12px',
       pageBreakInside: 'avoid',
       breakInside: 'avoid',
       display: 'flex',
@@ -103,70 +100,70 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'flex-start',
-      marginBottom: '6px',
-      gap: '10px',
+      marginBottom: '4px',
+      gap: '8px',
     },
     itemName: {
-      fontSize: '1.1rem',
+      fontSize: '0.95rem',
       fontWeight: '700',
       color: '#333333',
       flex: '1',
-      lineHeight: '1.2',
+      lineHeight: '1.1',
     },
     itemPrice: {
-      fontSize: '1.2rem',
+      fontSize: '1rem',
       fontWeight: '800',
       color: '#f77f00',
       whiteSpace: 'nowrap',
       flexShrink: 0,
     },
     itemDesc: {
-      fontSize: '0.85rem',
+      fontSize: '0.75rem',
       color: '#555555',
-      lineHeight: '1.3',
+      lineHeight: '1.2',
     },
     footer: {
-      marginTop: '20px',
-      padding: '15px',
+      marginTop: '10px',
+      padding: '8px',
       borderTop: '2px solid #e63946',
       textAlign: 'center',
       color: '#666666',
-      fontSize: '0.9rem',
+      fontSize: '0.8rem',
     },
     beverageGrid: {
       display: 'grid',
       gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '10px',
+      gap: '8px',
     },
     beverageItem: {
       backgroundColor: '#f9f9f9',
       border: '1px solid #e0e0e0',
-      borderRadius: '6px',
-      padding: '10px',
+      borderRadius: '5px',
+      padding: '8px',
       textAlign: 'center',
       pageBreakInside: 'avoid',
     },
     beverageName: {
-      fontSize: '0.95rem',
+      fontSize: '0.85rem',
       fontWeight: '700',
       color: '#333333',
-      marginBottom: '5px',
+      marginBottom: '3px',
     },
     beverageDesc: {
-      fontSize: '0.75rem',
+      fontSize: '0.7rem',
       color: '#666666',
-      marginBottom: '5px',
+      marginBottom: '3px',
     },
     beveragePrice: {
-      fontSize: '1.1rem',
+      fontSize: '0.95rem',
       fontWeight: '800',
       color: '#f77f00',
     },
     pageNumber: {
       position: 'absolute',
-      bottom: '15px',
-      right: '40px',
-      fontSize: '0.8rem',
+      bottom: '10px',
+      right: '35px',
+      fontSize: '0.75rem',
       color: '#999999',
     },
   };
@@ -183,36 +180,29 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
     );
   };
 
-  // Organizar categorías por páginas manualmente para evitar cortes
-  // Página 1: Maicitos, Salchipapa, Parrillas
-  // Página 2: Bebidas, Picadas, Entradas, Perros
-  // Página 3: Burgers, Brochetas, Maicitos adicionales
-
+  // Reorganizar categorías manualmente para una distribución óptima en 3 páginas
+  // Basado en el menuData.json que tiene 10 categorías
   const page1Categories = [];
   const page2Categories = [];
   const page3Categories = [];
-
+  
+  // Distribuir manualmente basado en el orden y tamaño de las categorías
   categorias.forEach((categoria, index) => {
     const catName = categoria.nombre.toLowerCase();
     
-    if (catName.includes('maicito') && page1Categories.length < 2) {
+    // Página 1: Entradas (3 items), Burgers (6 items), Perros (3 items) = 12 items
+    if (catName.includes('entrada') || catName.includes('burger') || catName.includes('perro')) {
       page1Categories.push(categoria);
-    } else if (catName.includes('salchipapa') || catName.includes('parrilla')) {
-      page1Categories.push(categoria);
-    } else if (catName.includes('bebida') || catName.includes('picada') || 
-               catName.includes('entrada') || catName.includes('perro')) {
+    }
+    // Página 2: Brochetas (3 items), Maicitos (3 items), Salchipapa (4 items) = 10 items
+    else if (catName.includes('brocheta') || catName.includes('maicito') || catName.includes('salchipapa') || catName.includes('picadas') ) {
       page2Categories.push(categoria);
-    } else {
+    }
+    // Página 3: Parrilladas (3 items), Croquetas (3 items), Bebidas (7 items) = 16 items
+    else {
       page3Categories.push(categoria);
     }
   });
-
-  if (page1Categories.length > 3) {
-    page2Categories.unshift(page1Categories.pop());
-  }
-  if (page2Categories.length > 4) {
-    page3Categories.unshift(page2Categories.pop());
-  }
 
   const renderCategories = (categoriasToRender) => {
     return categoriasToRender.map((categoria) => {
@@ -289,16 +279,12 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
       <div style={{...printStyles.page, ...printStyles.lastPage}}>
         <div style={printStyles.categoriesContainer}>
           {renderCategories(page3Categories)}
+          
+          {/* Footer al final del contenido de la página 3 */}
+          <footer style={{...printStyles.footer, marginTop: '10px'}}>
+            
+          </footer>
         </div>
-
-        <footer style={printStyles.footer}>
-          <p style={{ fontSize: '0.95rem', marginBottom: '3px' }}>
-            © 2025 Entre Panas Burger - Todos los derechos reservados
-          </p>
-          <p style={{ fontSize: '0.85rem' }}>
-            Precios sujetos a cambios sin previo aviso
-          </p>
-        </footer>
         
         <span style={printStyles.pageNumber}>Página 3 de 3</span>
       </div>
