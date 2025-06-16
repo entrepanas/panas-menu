@@ -3,14 +3,14 @@
     {
       "id": "entradas",
       "nombre": "Entradas",
-      "imagen": "/assets/dedos-queso.webp",
+      "imagen": "/assets/entrada_chicharron.jpeg",
       "platillos": [
         {
           "id": "chicharron",
           "nombre": "Chicharrón",
           "descripcion": "Chicharrón 200gr, yuca 100gr y salsa de la casa",
           "precio": "12,000",
-          "imagen": "/assets/dedos-queso.webp"
+          "imagen": "/assets/entrada_chicharron.jpeg"
         },
         {
           "id": "empanada",
@@ -73,7 +73,7 @@
           "nombre": "Hamburguesa Entre Panas",
           "descripcion": "Croqueta de ternera, croqueta de pollo a la parrilla, lomo de cerdo 100gr, pechuga a la plancha 150gr, salami 9gr, jamon, queso cheddar, cebolla roja, tomate, lechuga, salsa de la casa y papa a la francesa 80gr",
           "precio": "35,000",
-          "imagen": "/assets/Hamburguesa-napolitana-3.jpeg"
+          "imagen": "/assets/hamburgesa_entre_panas.jpeg"
           
         }
       ]
@@ -81,28 +81,28 @@
     {
       "id": "perros",
       "nombre": "Perros",
-      "imagen": "/assets/perros.webp",
+      "imagen": "/assets/perro_mixto.jpeg",
       "platillos": [
         {
           "id": "perro-sencillo",
           "nombre": "Perro sencillo",
           "descripcion": "Salchicha Americana 1 unidad, pan de perro, papa ripio 50gr, queso costeño 50gr y salsa de la casa",
           "precio": "12,000",
-          "imagen": "/assets/perros.webp"
+          "imagen": "/assets/perro_mixto.jpeg"
         },
         {
           "id": "perro-mixto",
           "nombre": "Perro mixto",
           "descripcion": "Salchicha Americana 1 unidad, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso costeño 50gr, salsa de la casa, papa a la francesa 100gr y ensalada",
           "precio": "25,000",
-          "imagen": "/assets/perros.webp"
+          "imagen": "/assets/perro_mixto.jpeg"
         },
         {
           "id": "perro-entre-panas",
           "nombre": "Perro Entre Panas",
           "descripcion": "Salchicha Americana 1 unidad, tocineta 50gr, carne mechada 50gr, pechuga a la plancha 75gr, pan de perro, papa ripio 50gr, queso cheddar, salsa de la casa, papa a la francesa 100gr y ensalada",
           "precio": "28,000",
-          "imagen": "/assets/perros.webp"
+          "imagen": "/assets/perro_mixto.jpeg"
         }
       ]
     },
@@ -137,28 +137,28 @@
     {
       "id": "maicitos-esp",
       "nombre": "Maicitos",
-      "imagen": "/assets/maicitos.webp",
+      "imagen": "/assets/maicitos.jpeg",
       "platillos": [
         {
           "id": "maicito-clasico",
           "nombre": "Maicitos",
           "descripcion": "Maiz dulce en bolsa 100gr, pechuga de pollo 150gr, queso mozzarella, tosdadas mantequilla, crema de leche 100gr y salsa de la casa",
           "precio": "18,000",
-          "imagen": "/assets/maicitos.webp"
+          "imagen": "/assets/maicitos.jpeg"
         },
         {
           "id": "maicito-carne",
           "nombre": "Maicitos de Carne",
           "descripcion": "Maiz dulce en bolsa 100gr, pecho (carne para mechar) 100gr, crema de leche 100gr, tostadas mantequilla, queso mozzarella y salsa de la casa",
           "precio": "25,000",
-          "imagen": "/assets/maicitos.webp"
+          "imagen": "/assets/maicitos.jpeg"
         },
         {
           "id": "maicito-mixto",
           "nombre": "Maicitos Mixtos",
           "descripcion": "Maiz dulce en bolsa 100gr, pecho (carne para mechar) 50gr, pechuga de pollo 150gr, crema de leche 100gr, tostadas mantequilla, queso mozzarella y salsa de la casa",
           "precio": "29,000",
-          "imagen": "/assets/maicitos.webp"
+          "imagen": "/assets/maicitos.jpeg"
         }
       ]
     },
