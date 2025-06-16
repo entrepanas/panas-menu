@@ -602,6 +602,10 @@ body::before {
   color: #00f2ea;
 }
 
+.footer-section:nth-child(6):hover .footer-icon {
+  color: #25d366;
+}
+
 .location-link:hover .footer-icon {
   color: var(--brand-primary);
 }
