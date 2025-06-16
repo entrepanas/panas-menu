@@ -169,12 +169,12 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-            <h3 className="footer-title">Comparte</h3>
+            <h3 className="footer-title">Pide ya!</h3>
             <br />
 
             {/* Enlace a WhatsApp con su icono */}
             <a
-                href="https://wa.me/+573017177934" // <-- CAMBIA ESTO
+                href="https://wa.me/+573017177934" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-link social-link"
@@ -196,7 +196,7 @@ const Footer = () => {
 
             {/* Etiqueta de texto */}
             <a
-                href="https://wa.me/+573017177934" // <-- CAMBIA ESTO TAMBIÉN
+                href="https://wa.me/+573017177934"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-link social-link"
