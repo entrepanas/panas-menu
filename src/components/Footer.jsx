@@ -168,6 +168,43 @@ const Footer = () => {
             </a>
         </div>
 
+        <div className="footer-section">
+            <h3 className="footer-title">Comparte</h3>
+            <br />
+
+            {/* Enlace a WhatsApp con su icono */}
+            <a
+                href="https://wa.me/+573017177934" // <-- CAMBIA ESTO
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link social-link"
+            >
+                <svg
+                className="footer-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-labelledby="whatsappTitle"
+                role="img"
+                >
+                <title id="whatsappTitle">WhatsApp</title>
+                {/* Icono oficial de WhatsApp */}
+                <path d="M19.11 4.93A9.87 9.87 0 0 0 12.005 2C6.5 2 2 6.5 2 12a9.99 9.99 0 0 0 5.46 9.07l-1.35 4.93 5.03-1.33A9.92 9.92 0 0 0 12.005 22c5.5 0 10-4.5 10-10a9.87 9.87 0 0 0-2.895-7.07zM12.005 20.13c-1.54 0-3.02-.4-4.32-1.15l-3.17.84.86-3.1A8.02 8.02 0 0 1 4 12c0-4.42 3.58-8 8.005-8s8 3.58 8 8-3.58 8-8.005 8.13z" />
+                <path d="M15.22 13.12c-.22-.11-.76-.38-.88-.42s-.38-.06-.54.06-.32.42-.4.5-.16.11-.3.05s-.5-.18-1-.58-.8-1-1.12-1.42-.24-.34-.12-.54.1-.14.22-.22.16-.2.22-.32s.04-.22-.02-.42-.54-1.3-.74-1.78-.4-.4-.54-.4h-.5c-.2 0-.44.06-.66.32s-.88.86-.88 2.1 0 2.44.12 2.62s.18.2.38.42.7.9 1.7 1.48 1.68.88 2.28 1.12.9.38 1.42.32.88-.36 1-.72.12-.68.06-.78z" />
+                </svg>
+            </a>
+            <br />
+
+            {/* Etiqueta de texto */}
+            <a
+                href="https://wa.me/+573017177934" // <-- CAMBIA ESTO TAMBIÉN
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link social-link"
+            >
+                <span>WhatsApp</span>
+            </a>
+        </div>
+
       </div>
 
       <div className="footer-divider"></div>
