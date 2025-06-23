@@ -338,6 +338,153 @@
           "imagen": "/assets/frafre.webp"
         }
       ]
-    }
+    },
+    {
+      "id": "cocteles-cervezas",
+      "nombre": "Cócteles y Cervezas",
+      "imagen": "/assets/cocteles.webp",
+      "platillos": [
+        {
+          "id": "mojito",
+          "nombre": "Mojito",
+          "descripcion": "Ron blanco, zumo de limón, hierbabuena, sirop simple, ginger ale",
+          "precio": "9,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "cuba-libre",
+          "nombre": "Cuba libre",
+          "descripcion": "Ron blanco, zumo de limón y Coca-Cola",
+          "precio": "9,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "cosmopolitan",
+          "nombre": "Cosmopolitan",
+          "descripcion": "Vodka, zumo de frutos rojos, triple sec, zumo de limón y sirop simple",
+          "precio": "12,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "tropical-ice-tea",
+          "nombre": "Tropical Ice Tea",
+          "descripcion": "Ron blanco, vodka, gin, tequila, Curazao blue, zumo de maracuyá, sirop simple y ginger ale",
+          "precio": "13,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "long-island",
+          "nombre": "Long Island Ice Tea",
+          "descripcion": "Licor de naranja, vodka, ginebra, ron blanco, tequila, zumo de limón, sirop simple y Coca-Cola",
+          "precio": "13,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "margarita",
+          "nombre": "Margarita",
+          "descripcion": "Tequila, sirop simple, zumo de limón, licor de naranja, borde de sal y Tajín",
+          "precio": "12,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "white-lady",
+          "nombre": "White Lady",
+          "descripcion": "Ginebra, triple sec, zumo de limón, sirop simple",
+          "precio": "8,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "bramble",
+          "nombre": "Bramble",
+          "descripcion": "Ginebra, sirop simple, zumo de limón y mermelada de frutos rojos",
+          "precio": "8,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "caipiroska",
+          "nombre": "Caipiroska",
+          "descripcion": "Vodka, zumo de limón y azúcar",
+          "precio": "8,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "ruso-negro",
+          "nombre": "Ruso Negro",
+          "descripcion": "Crema de café y whisky, vodka",
+          "precio": "9,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "daiquiri",
+          "nombre": "Daiquiri",
+          "descripcion": "Ron blanco, zumo de limón, sirop simple",
+          "precio": "8,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "tom-collins",
+          "nombre": "Tom Collins",
+          "descripcion": "Ginebra, zumo de limón, sirop simple, soda",
+          "precio": "7,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "destornillador",
+          "nombre": "Destornillador",
+          "descripcion": "Vodka, zumo de naranja",
+          "precio": "7,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "tequila-sunrise",
+          "nombre": "Tequila Sunrise",
+          "descripcion": "Tequila, zumo de frutos rojos, zumo de naranja, sirop simple",
+          "precio": "9,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "tinto-verano",
+          "nombre": "Copa Tinto Verano",
+          "descripcion": "Vinotinto, zumo de limón, sirop simple, ginger ale",
+          "precio": "14,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "soda-frutos-rojos",
+          "nombre": "Soda de frutos rojos",
+          "descripcion": "Soda, sirop simple, sirop de frutos rojos",
+          "precio": "11,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "soda-frutos-amarillos",
+          "nombre": "Soda de frutos amarillos",
+          "descripcion": "Soda, sirop de frutos amarillos, sirop simple",
+          "precio": "11,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "soda-coco-limon",
+          "nombre": "Soda de coco y limón",
+          "descripcion": "Sirop de coco, zumo de limón, sirop simple",
+          "precio": "11,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "cervezas",
+          "nombre": "Cervezas",
+          "descripcion": "Costeña, Águila light, Águila original, Coronita, Poker",
+          "precio": "6,000",
+          "imagen": "/assets/coctel.webp"
+        },
+        {
+          "id": "cervezas-micheladas",
+          "nombre": "Cervezas Micheladas",
+          "descripcion": "Gomitas, borde de sal o Tajín, zumo de limón",
+          "precio": "8,000",
+          "imagen": "/assets/coctel.webp"
+        }
+      ]
+    } 
   ]
 }
