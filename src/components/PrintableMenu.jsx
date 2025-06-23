@@ -185,22 +185,28 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
   const page1Categories = [];
   const page2Categories = [];
   const page3Categories = [];
+  const page4Categories = [];
+
   
   // Distribuir manualmente basado en el orden y tamaño de las categorías
   categorias.forEach((categoria, index) => {
     const catName = categoria.nombre.toLowerCase();
     
     // Página 1: Entradas (3 items), Burgers (6 items), Perros (3 items) = 12 items
-    if (catName.includes('entrada') || catName.includes('burger') || catName.includes('perro')) {
+    if (catName.includes('entradas') || catName.includes('burgers') || catName.includes('perros')) {
       page1Categories.push(categoria);
     }
     // Página 2: Brochetas (3 items), Maicitos (3 items), Salchipapa (4 items) = 10 items
-    else if (catName.includes('brocheta') || catName.includes('maicito') || catName.includes('salchipapa') || catName.includes('picadas') ) {
+    else if (catName.includes('brochetas') || catName.includes('maicitos') || catName.includes('salchipapa') || catName.includes('picadas') ) {
       page2Categories.push(categoria);
     }
-    // Página 3: Parrilladas (3 items), Croquetas (3 items), Bebidas (7 items) = 16 items
-    else {
+    // Página 3: Brochetas (3 items), Maicitos (3 items), Salchipapa (4 items) = 10 items
+    else if (catName.includes('parrilladas') || catName.includes('croquetas') || catName.includes('bebidas') ) {
       page3Categories.push(categoria);
+    }
+    // Página 4: cocteles
+    else {
+      page4Categories.push(categoria);
     }
   });
 
@@ -263,7 +269,7 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
           {renderCategories(page1Categories)}
         </div>
         
-        <span style={printStyles.pageNumber}>Página 1 de 3</span>
+        <span style={printStyles.pageNumber}>Página 1 de 4</span>
       </div>
 
       {/* Página 2 */}
@@ -272,22 +278,32 @@ const PrintableMenu = React.forwardRef(({ categorias, logo }, ref) => {
           {renderCategories(page2Categories)}
         </div>
         
-        <span style={printStyles.pageNumber}>Página 2 de 3</span>
+        <span style={printStyles.pageNumber}>Página 2 de 4</span>
       </div>
 
       {/* Página 3 */}
       <div style={{...printStyles.page, ...printStyles.lastPage}}>
         <div style={printStyles.categoriesContainer}>
-          {renderCategories(page3Categories)}
+          {renderCategories(page3Categories)}            
+        </div>
+        
+        <span style={printStyles.pageNumber}>Página 3 de 4</span>
+      </div>
+
+       {/* Página 4 */}
+      <div style={{...printStyles.page, ...printStyles.lastPage}}>
+        <div style={printStyles.categoriesContainer}>
+          {renderCategories(page4Categories)}
           
           {/* Footer al final del contenido de la página 3 */}
           <footer style={{...printStyles.footer, marginTop: '10px'}}>
-            
+            Sujeto a cambios sin previo aviso.
           </footer>
         </div>
         
-        <span style={printStyles.pageNumber}>Página 3 de 3</span>
+        <span style={printStyles.pageNumber}>Página 4 de 4</span>
       </div>
+
     </div>
   );
 });
